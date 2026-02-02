@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +12,12 @@
     @extends("layouts.main")
 
     @section("content") 
-    <h1>{{$salute}}</h1>
-    <p>This is my body</p>
+        <div class="row pt-4">
+            @foreach($comics as $comic)
+                {{-- Passiamo l'elemento corrente al partial rinominandolo 'item' --}}
+                @include('partials.card', ['item' => $comic])
+            @endforeach
+        </div>
     @endsection
     
 </body>

@@ -1,37 +1,28 @@
-<header>
-    <div class="container">
-        <img src="logo.png" alt="Logo">
-        <nav>
-            <ul>
-                <li>
-                    CHARACTERS
+<header class="bg-white py-3">
+    
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" width="80">
+        </div>
+        
+        <nav >
+            <ul class="nav">
+                @php
+                    $links=['CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEOS', 'FANS', 'NEWS', 'SHOP'];
+
+                @endphp
+
+                @foreach ($links as $link)
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark fw-bold px-2"> {{$link}} </a>
                 </li>
-                <li>
-                    COMICS
-                </li>
-                <li>
-                    MOVIES
-                </li>
-                <li>
-                    TV
-                </li>
-                <li>
-                    GAMES
-                </li>
-                <li>
-                    COLLECTIBLES
-                </li>
-                <li>
-                    VIDEOS
-                </li>
-                <li>
-                    FANS
-                </li>
-                <li>
-                    SHOP
-                </li>
+                    
+                @endforeach
 
             </ul>
+            
+
+            
         </nav>
 
     </div>
