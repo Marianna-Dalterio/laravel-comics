@@ -39,7 +39,7 @@
                     <img src="{{ Vite::asset('resources/img/dc-logo-bg.png') }}" 
                          alt="DC Logo Background" 
                          class="position-absolute" 
-                         style="right: -50px; top: 50%; transform: translateY(-50%); width: 550px;">
+                         style=" top: 50%; transform: translateY(-50%); width: 550px;">
                 </div>
 
 
