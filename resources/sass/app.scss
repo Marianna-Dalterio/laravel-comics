@@ -68,3 +68,22 @@
         }
     }
 }
+
+
+
+//footer main sezione grigia con menù di link, i titoli delle sezioni sono molto bianchi e i link molto grigi
+.footer-main {
+    h5 {
+        font-size: 1.1rem;
+        letter-spacing: -0.5px;
+    }
+
+    a {
+        color: #959595 !important; // Quel grigio specifico della DC
+        font-size: 0.75rem;
+
+        &:hover {
+            color: white !important;
+        }
+    }
+}
