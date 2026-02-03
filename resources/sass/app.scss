@@ -6,3 +6,65 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+//stile jumbotron
+.jumbotron {
+    height: 400px;
+    background-image: url('../img/jumbotron.jpg'); //in css passiamo l'url per l'immagine con il relativo percorso, quindi ../ perchè esci da sass ed entri in img
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+//etichetta nella sezione fumetti 
+.series-label {
+    top: -25px; // La sposta esattamente a cavallo della linea di divisione
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+
+//immagini card 
+.comic-card {
+    .img-container {
+        // Forza un quadrato perfetto
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+
+        .comic-thumb {
+            width: 100%;
+            height: 100%;
+            // Fondamentale: riempie lo spazio senza deformarsi, tagliando i bordi extra
+            object-fit: cover;
+            // Allinea l'immagine in alto (spesso le facce dei supereroi sono lì!)
+            object-position: top;
+        }
+    }
+
+    p {
+        // Opzionale: limita il titolo a poche righe se è troppo lungo
+        margin-top: 15px;
+        font-size: 0.8rem;
+    }
+}
+
+
+//icone dello shop banner blu
+.shop-banner {
+    // Assicura che il banner sia sopra altri elementi se necessario
+    position: relative;
+    z-index: 2;
+
+    .banner-item {
+
+        img {
+            height: 55px; // Altezza fissa per le icone del banner
+            width: auto;
+        }
+
+        span {
+            font-size: 0.8rem;
+            white-space: nowrap; // Evita che il testo vada a capo
+        }
+    }
+}

@@ -2,7 +2,7 @@
     
     <div class="container d-flex justify-content-between align-items-center">
         <div class="logo">
-            <img src="logo.png" alt="Logo" width="80">
+            <img src={{Vite::asset("resources/img/dc-logo.png")}} alt="Logo" width="80">
         </div>
         
         <nav >
