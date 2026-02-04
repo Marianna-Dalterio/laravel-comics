@@ -24,9 +24,9 @@
 
                 {{-- stampo fumetti  --}}
                 <div class="row pt-3">
-                    @foreach($comics as $comic)
+                    @foreach($comics as $index=>$comic)
                         {{-- Passiamo l'elemento corrente al partial rinominandolo 'item' --}}
-                        @include('partials.card', ['item' => $comic])
+                        @include('partials.card', ['item' => $comic, "id"=>$index])
                     @endforeach
                 </div>
 
